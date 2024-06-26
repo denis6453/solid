@@ -11,6 +11,5 @@ public class DBUser {
 
     public static void insertUser(User user){
         usersDb.add(user);
-        System.out.println("Save user: " + user.getName());
     }
 }

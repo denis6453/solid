@@ -9,5 +9,6 @@ public class UserSaver implements SaverInDb {
     @Override
     public <T extends User> void save(User user) {
         DBUser.insertUser(user);
+        System.out.println("Save user: " + user.getName());
     }
 }
